@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
+    
+    <title>ClassCapture</title>
+</head>
+<body>
+    
+    <!-- nav -->
+    <section>
+        <div class="flex items-center justify-between mx-6 px-6 mt-4 border rounded-full text-white p-3 bg-green-800">
+            <div class="font-grotesq font-bold">Class Capture</div>
+            <div class="font-grotesq font-bold">MiddlePart</div>
+            <div class="font-grotesq font-bold">normalpicture</div>
+        </div>
+    </section>
+ <!-- middle -->
+
+
+
+<div class="flex justify-center">
+    <div class="flex flex-col flex items-center justify-center md:flex-row gap-2 mt-3 w-5/6">
+        <div class="h-full w-3/5 border border-black rounded-lg px-3 py-2 flex gap-4 font-grotesq">
+            <div id="timer" class="font-grotesq font-bold">00:00</div>
+          <textarea name="" id="textbox" cols="30" rows="20" placeholder="Transcription goes here" class="w-full  focus:outline-none focus:border-white-100 font-grotesq  md:rows-25"></textarea>
+          
+        </div>
+        
+        <div class="h-full w-3/5 border border-black rounded-lg px-3 py-2 flex flex-col gap-4 font-grotesq">
+          <textarea name="" id="response-textbox" cols="30" rows="20" placeholder="Transcription goes here" class="w-full  focus:outline-none focus:border-white-100 font-grotesq sm:cols-40 md:rows-25" readonly></textarea>
+          <div class="flex gap-2 items-center justify-center">
+            <input type="text" name="" id="" class="border rounded-full pl-3 font-grotesq w-5/6" style="align-self: flex-end;" >
+            <button id="ask-btn" class="border px-2 text-white bg-green-800 font-grotesq rounded-full">Send</button>
+          </div>
+        </div>
+      </div>
+      
+</div>
+
+
+    <!-- bottom -->
+    <section class="flex items-center justify-center mt-6">
+        <div class="bg-white w-1/3  border rounded-full p-2 flex items-center justify-center ">
+            <button class="ml-2 border rounded-full p-2" id="start-btn"><svg id="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M17 7V11C17 13.7614 14.7614 16 12 16C9.23858 16 7 13.7614 7 11V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M17 7H14M17 11H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20 11C20 15.4183 16.4183 19 12 19M12 19C7.58172 19 4 15.4183 4 11M12 19V22M12 22H15M12 22H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            
+
+            <svg class="" id="svg2" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M4 7C4 5.58579 4 4.87868 4.43934 4.43934C4.87868 4 5.58579 4 7 4C8.41421 4 9.12132 4 9.56066 4.43934C10 4.87868 10 5.58579 10 7V17C10 18.4142 10 19.1213 9.56066 19.5607C9.12132 20 8.41421 20 7 20C5.58579 20 4.87868 20 4.43934 19.5607C4 19.1213 4 18.4142 4 17V7Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M14 7C14 5.58579 14 4.87868 14.4393 4.43934C14.8787 4 15.5858 4 17 4C18.4142 4 19.1213 4 19.5607 4.43934C20 4.87868 20 5.58579 20 7V17C20 18.4142 20 19.1213 19.5607 19.5607C19.1213 20 18.4142 20 17 20C15.5858 20 14.8787 20 14.4393 19.5607C14 19.1213 14 18.4142 14 17V7Z" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+        
+
+        
+        </button>
+
+            
+
+            
+            <div class="ml-2 border rounded-full p-2">AI</div>
+
+
+            <div class="ml-2 border rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M12 15L12 5M12 15C11.2998 15 9.99153 13.0057 9.5 12.5M12 15C12.7002 15 14.0085 13.0057 14.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5 19H19.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></div>
+
+
+
+            <div class="ml-2 border rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9949 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C12.6849 2 13.3538 2.0659 14 2.19142" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M23 5.5C23 7.433 21.433 9 19.5 9C17.567 9 16 7.433 16 5.5C16 3.567 17.567 2 19.5 2C21.433 2 23 3.567 23 5.5Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+
+
+            <div class="ml-2 border rounded-full p-2 bg-green-600 text-white">Done</div>
+        </div>
+    </section>
+
+
+    <div class=" flex items-center justify-center   mt-6 ">
+    <p  id="instructions" class=" text-white bg-blue-300 rounded-full p-2 font-grotesq text-center border w-1/4  mt-6">Click the mic to start</p>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
